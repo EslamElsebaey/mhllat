@@ -1,0 +1,85 @@
+$main-color: #1eaf2f;
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Graphik Arabic";
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f2f3f7;
+  margin: 0;
+  &.overflowVisible {
+    overflow: visible;
+  }
+  &.overflowHidden {
+    overflow: hidden;
+  }
+  padding-top: 90.8px;
+  // padding-top: 176.98px;
+  @include max-1200 {
+    padding-top: 160.8px;
+  }
+   @include max-992 {
+    padding-top: 124.8px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main-color;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+.container {
+  padding-inline: 15px;
+  @include max-768 {
+    padding-inline: 20px;
+  }
+  @include min-1200 {
+    max-width: 1170px;
+  }
+}

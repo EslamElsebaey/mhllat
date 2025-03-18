@@ -1,0 +1,25 @@
+.brands {
+  padding-top: 55px;
+  padding-bottom: 35px;
+  @include max-768 {
+    padding-top: 40px;
+  }
+}
+.brand-item {
+  width: 100%;
+  .img-holder {
+    // width: 150px;
+    aspect-ratio: 1;
+    width: 100%;
+    @extend %flex-center;
+    background-color: #fff;
+    // @include max-768 {
+    //   width: 100%;
+    //   aspect-ratio: unset;
+    // }
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}

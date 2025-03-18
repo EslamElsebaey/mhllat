@@ -1,0 +1,33 @@
+
+@import"../style/sass/base/fonts";
+@import "../style/sass/media-query/media-query";
+@import "../style/sass/base/reboot";
+@import"../style/sass/base/common";
+
+
+// Components
+@import "../style/sass/components/header" ;
+// @import "../style/sass/components/product" ;
+@import "../style/sass/components/footer" ;
+@import "../style/sass/components/coupons";
+@import "../style/sass/components/banners";
+
+
+
+
+// Sections
+@import "../style/sass/sections/mainBanner";
+@import "../style/sass/sections/brands";
+@import "../style/sass/sections/blog";
+@import "../style/sass/sections/faq";
+
+
+
+
+
+
+@import "../style/sass/dir/dir";
+
+
+
+

@@ -1,0 +1,108 @@
+.coupons {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.coupons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  @include max-1200 {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  @include max-992 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include max-768 {
+    grid-template-columns: 1fr;
+  }
+}
+.coupon-item {
+  padding-top: 39px;
+  padding-bottom: 35px;
+  min-height: 388px;
+  max-width: 262px;
+  background-image: url(../../../images/coupon/coupon-bg.png);
+  background-position: center;
+  background-size: cover;
+  padding-inline: 20px;
+  .img-wrapper {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    @extend %flex-center;
+    margin-bottom: 20px;
+    margin-inline: auto;
+  }
+  .coupon-img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+    // max-width: 222px;
+    // margin-inline: auto
+  }
+  .btns {
+    @extend %flex-center;
+    flex-direction: column;
+    margin-top: 55px;
+    gap: 30px;
+  }
+  .copy-btn {
+    min-width: 156px;
+    padding-inline: 20px;
+    @extend %flex-center;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #1eaf2f;
+    position: relative;
+    color: #fff;
+    gap: 10px;
+    transition: all linear 0.2s;
+    &:hover {
+      background-color: rgba($color: #1eaf2f, $alpha: 0.8);
+    }
+    &::before {
+      content: "\f0c5";
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 300;
+      font-size: 22px;
+      color: #ffffff;
+    }
+    &.copied {
+      cursor: auto;
+      &::before {
+        content: "\f058";
+      }
+      &:hover {
+        background-color: #1eaf2f;
+      }
+    }
+  }
+  .share-anchor {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 500;
+    @extend %flex-center;
+    transition: all linear 0.2s;
+    gap: 8px;
+    &:hover {
+      color: $main-color;
+      .icon {
+        color: $main-color;
+      }
+    }
+    .icon {
+      font-size: 16px;
+      color: #808080;
+      transition: all linear 0.2s;
+    }
+  }
+}

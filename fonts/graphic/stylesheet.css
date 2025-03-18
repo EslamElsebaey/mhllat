@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Black.woff2') format('woff2'),
+        url('GraphikArabic-Black.woff') format('woff'),
+        url('GraphikArabic-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Black_1.woff2') format('woff2'),
+        url('GraphikArabic-Black_1.woff') format('woff'),
+        url('GraphikArabic-Black_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Black_2.woff2') format('woff2'),
+        url('GraphikArabic-Black_2.woff') format('woff'),
+        url('GraphikArabic-Black_2.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Bold.woff2') format('woff2'),
+        url('GraphikArabic-Bold.woff') format('woff'),
+        url('GraphikArabic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Bold_1.woff2') format('woff2'),
+        url('GraphikArabic-Bold_1.woff') format('woff'),
+        url('GraphikArabic-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Bold_2.woff2') format('woff2'),
+        url('GraphikArabic-Bold_2.woff') format('woff'),
+        url('GraphikArabic-Bold_2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Extralight.woff2') format('woff2'),
+        url('GraphikArabic-Extralight.woff') format('woff'),
+        url('GraphikArabic-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Extralight_1.woff2') format('woff2'),
+        url('GraphikArabic-Extralight_1.woff') format('woff'),
+        url('GraphikArabic-Extralight_1.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Extralight_2.woff2') format('woff2'),
+        url('GraphikArabic-Extralight_2.woff') format('woff'),
+        url('GraphikArabic-Extralight_2.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Light.woff2') format('woff2'),
+        url('GraphikArabic-Light.woff') format('woff'),
+        url('GraphikArabic-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Light_1.woff2') format('woff2'),
+        url('GraphikArabic-Light_1.woff') format('woff'),
+        url('GraphikArabic-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Light_2.woff2') format('woff2'),
+        url('GraphikArabic-Light_2.woff') format('woff'),
+        url('GraphikArabic-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Medium.woff2') format('woff2'),
+        url('GraphikArabic-Medium.woff') format('woff'),
+        url('GraphikArabic-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Medium_1.woff2') format('woff2'),
+        url('GraphikArabic-Medium_1.woff') format('woff'),
+        url('GraphikArabic-Medium_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Medium_2.woff2') format('woff2'),
+        url('GraphikArabic-Medium_2.woff') format('woff'),
+        url('GraphikArabic-Medium_2.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Regular.woff2') format('woff2'),
+        url('GraphikArabic-Regular.woff') format('woff'),
+        url('GraphikArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Regular_1.woff2') format('woff2'),
+        url('GraphikArabic-Regular_1.woff') format('woff'),
+        url('GraphikArabic-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Regular_2.woff2') format('woff2'),
+        url('GraphikArabic-Regular_2.woff') format('woff'),
+        url('GraphikArabic-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Semibold.woff2') format('woff2'),
+        url('GraphikArabic-Semibold.woff') format('woff'),
+        url('GraphikArabic-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Semibold_1.woff2') format('woff2'),
+        url('GraphikArabic-Semibold_1.woff') format('woff'),
+        url('GraphikArabic-Semibold_1.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Semibold_2.woff2') format('woff2'),
+        url('GraphikArabic-Semibold_2.woff') format('woff'),
+        url('GraphikArabic-Semibold_2.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic Super';
+    src: url('GraphikArabic-Super.woff2') format('woff2'),
+        url('GraphikArabic-Super.woff') format('woff'),
+        url('GraphikArabic-Super.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic Super';
+    src: url('GraphikArabic-Super_1.woff2') format('woff2'),
+        url('GraphikArabic-Super_1.woff') format('woff'),
+        url('GraphikArabic-Super_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic Super';
+    src: url('GraphikArabic-Super_2.woff2') format('woff2'),
+        url('GraphikArabic-Super_2.woff') format('woff'),
+        url('GraphikArabic-Super_2.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Thin.woff2') format('woff2'),
+        url('GraphikArabic-Thin.woff') format('woff'),
+        url('GraphikArabic-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Thin_1.woff2') format('woff2'),
+        url('GraphikArabic-Thin_1.woff') format('woff'),
+        url('GraphikArabic-Thin_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Arabic';
+    src: url('GraphikArabic-Thin_2.woff2') format('woff2'),
+        url('GraphikArabic-Thin_2.woff') format('woff'),
+        url('GraphikArabic-Thin_2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,39 @@
+.mainBanner {
+  .swiper-pagination {
+    bottom: 20px;
+    @include max-768 {
+      bottom: 10px;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    @include max-768 {
+      display: none;
+    }
+  }
+  .mainBanner-item {
+    width: 100%;
+    display: flex;
+  }
+  .mainBanner-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    .icon {
+      transition: all linear 0.2s;
+      opacity: 0.4;
+      font-size: 20px;
+      color: #000000;
+    }
+    &:hover {
+      .icon {
+        color: $main-color;
+      }
+    }
+    &::after {
+     display: none;
+    }
+  }
+}
