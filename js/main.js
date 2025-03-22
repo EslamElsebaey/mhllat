@@ -128,16 +128,19 @@ $(document).ready(function () {
 
   //**************************************************************************************************
 
-  // Mobile Side Menu
+  // Categories Mobile Menu
 
-  $(".openNavBtn").click(function () {
-    $(".navigation").addClass("show-navigation");
+  $(".menu-item-has-children").on("click", function () {
+    $(this).children("a").removeAttr("href");
+    $(".sub-menu").addClass("show-sub-menu");
+    $(".closeNavBtn").fadeIn();
     $("body").addClass("overflowHidden");
   });
 
-  $(".closeNavBtn").click(function () {
-    $(".navigation").removeClass("show-navigation");
+  $(".closeNavBtn").on("click", function () {
+    $(".sub-menu").removeClass("show-sub-menu");
     $("body").removeClass("overflowHidden");
+    $(this).hide()
   });
 
   //**************************************************************************************************
@@ -154,18 +157,6 @@ $(document).ready(function () {
 
   //**************************************************************************************************
 
-  //  Nested menu in  Mobile SideMenu
-
-  if ($(window).width() < 992) {
-    $(".menu-item-has-children > a").removeAttr("href");
-    $(".menu-item-has-children > a").on("click", function (e) {
-      e.stopPropagation();
-      $(this).siblings(".sub-menu").slideToggle(300);
-      $(this).toggleClass("mobile-arrow-rotate");
-    });
-  }
-
-  //**************************************************************************************************
 
   //  Footer Dropdown Menu In Mobile
 

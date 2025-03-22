@@ -1,8 +1,6 @@
 $main-color: #1eaf2f;
 
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,8 +22,8 @@ body {
   @include max-1200 {
     padding-top: 160.8px;
   }
-   @include max-992 {
-    padding-top: 124.8px;
+  @include max-992 {
+    padding-top: 122.7px;
   }
 }
 

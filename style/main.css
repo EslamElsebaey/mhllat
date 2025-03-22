@@ -81,7 +81,7 @@ body.overflowHidden {
 }
 @media only screen and (max-width: 991px) {
   body {
-    padding-top: 124.8px;
+    padding-top: 122.7px;
   }
 }
 
@@ -455,9 +455,9 @@ html[dir=ltr] .upper-section .cat-text {
   visibility: hidden;
   z-index: 20;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .toTop {
-    bottom: 10px;
+    bottom: 80px;
     right: 10px;
     width: 35px;
     height: 35px;
@@ -609,10 +609,13 @@ html[dir=ltr] .upper-section .cat-text {
 }
 @media only screen and (max-width: 991px) {
   .big-menu {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 55px;
-    gap: 20px;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .big-menu > li {
+    flex: 1;
+    padding-inline: 10px;
   }
 }
 .big-menu > li > a {
@@ -635,8 +638,11 @@ html[dir=ltr] .upper-section .cat-text {
   color: #1eaf2f;
 }
 @media only screen and (max-width: 991px) {
-  .big-menu > li > a:hover::after {
-    color: #1eaf2f;
+  .big-menu > li > a {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
   }
 }
 .big-menu > li > a .icon {
@@ -682,21 +688,35 @@ html[dir=ltr] .upper-section .cat-text {
 }
 @media only screen and (max-width: 991px) {
   .sub-menu {
-    position: static;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    padding-top: 70px;
     filter: none;
-    padding: 0;
-    padding-top: 12px;
-    gap: 0;
     opacity: 1;
     visibility: visible;
     transform: unset;
     transition: unset;
-    display: none;
+    justify-content: unset;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0;
+    row-gap: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.95);
+    transition: all linear 0.2s;
   }
-}
-@media only screen and (max-width: 991px) {
-  .sub-menu li {
-    margin-bottom: 12px;
+  .sub-menu.show-sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
   }
 }
 .sub-menu li a {
@@ -738,7 +758,6 @@ html[dir=ltr] .upper-section .cat-text {
   .menu-item-has-children {
     padding: 0;
     transition: unset;
-    width: 100%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -754,59 +773,19 @@ html[dir=ltr] .upper-section .cat-text {
     transform: translate(-50%, 0);
   }
 }
-@media only screen and (max-width: 991px) {
-  .menu-item-has-children > a {
-    position: relative;
-  }
-  .menu-item-has-children > a::after {
-    content: "\f078";
-    font-family: "Font Awesome 6 Pro";
-    font-size: 14px;
-    position: absolute;
-    inset-inline-end: 0;
-    color: #000;
-    transition: all linear 0.3s;
-  }
-  .menu-item-has-children > a.mobile-arrow-rotate::after {
-    transform: rotate(180deg);
-  }
-}
 
 @media only screen and (max-width: 991px) {
   .navigation {
-    overflow-y: auto;
     position: fixed;
-    top: 0;
+    bottom: 0;
     width: 100%;
     left: 0;
-    height: 100%;
     background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
     z-index: 20;
-    transform: scale(0.95);
-    padding: 20px;
     transition: all linear 0.2s;
+    padding: 12px;
+    border-top: 1px solid #e6e7e9;
   }
-  .navigation.show-navigation {
-    transform: scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-.openNavBtn {
-  display: flex;
-  align-items: center;
-}
-@media only screen and (min-width: 992px) {
-  .openNavBtn {
-    display: none;
-  }
-}
-.openNavBtn .icon {
-  color: #000;
-  font-size: 22px;
 }
 
 .currency {
@@ -819,6 +798,7 @@ html[dir=ltr] .upper-section .cat-text {
 @media only screen and (max-width: 991px) {
   .currency {
     transition: all linear 0.3s;
+    display: none;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -869,22 +849,16 @@ html[dir=ltr] .upper-section .cat-text {
   transition: all linear 0.2s;
 }
 
-.close-language-wrapper {
+.closeNavBtn {
   display: none;
+  position: fixed;
+  top: 20px;
+  inset-inline-end: 20px;
+  z-index: 1000;
 }
-@media only screen and (max-width: 991px) {
-  .close-language-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .close-language-wrapper .closeNavBtn {
-    display: flex;
-  }
-  .close-language-wrapper .closeNavBtn .icon {
-    color: #000;
-    font-size: 22px;
-  }
+.closeNavBtn .icon {
+  color: #000;
+  font-size: 22px;
 }
 
 .currency,
@@ -922,9 +896,6 @@ html[dir=ltr] .upper-section .cat-text {
 @media only screen and (max-width: 991px) {
   .control-tools {
     gap: 30px;
-  }
-  .control-tools .language {
-    display: none;
   }
 }
 
