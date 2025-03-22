@@ -26,6 +26,9 @@
       opacity: 0.4;
       font-size: 20px;
       color: #000000;
+      @include dir(ltr) {
+        transform: rotate(180deg);
+      }
     }
     &:hover {
       .icon {
@@ -33,7 +36,7 @@
       }
     }
     &::after {
-     display: none;
+      display: none;
     }
   }
 }

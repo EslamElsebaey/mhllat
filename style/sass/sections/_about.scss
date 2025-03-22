@@ -1,0 +1,171 @@
+.about {
+  padding-top: 80px;
+  @include max-768 {
+    padding-top: 50px;
+  }
+}
+.about-content {
+  background-color: #fff;
+  padding-top: 47px;
+  padding-bottom: 144px;
+  padding-inline: 67px;
+  @include max-768 {
+    padding-top: 35px;
+    padding-inline: 20px;
+    padding-bottom: 40px;
+  }
+  .about-desc {
+    width: 100%;
+    max-width: 1008px;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 65px;
+    @include dir(ltr) {
+      line-height: 1.45;
+    }
+    @include max-768 {
+      max-width: 100%;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.principles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  justify-items: center;
+  @include max-1200 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include max-768 {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+}
+.principle-item {
+  max-width: 323px;
+  background-color: #f2f3f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 43px;
+  padding-inline: 23px;
+  min-height: 338px;
+  @include max-1200 {
+    max-width: 100%;
+  }
+  @include max-768 {
+    min-height: unset;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+  .icon-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: $main-color;
+    margin-bottom: 24px;
+    @include max-768 {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+    }
+    .icon {
+      font-size: 36px;
+      color: #ffffff;
+      @include max-768 {
+        font-size: 30px;
+      }
+    }
+  }
+  .title {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    @include max-768 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  .text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+    @include dir(ltr) {
+      line-height: 1.5;
+    }
+    @include max-768 {
+      font-size: 16px;
+    }
+  }
+}
+
+.statistics-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 51px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  @include max-768 {
+    column-gap: 15px;
+    row-gap: 35px;
+    margin-top: 45px;
+  }
+}
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  @include max-768 {
+    width: calc(50% - 7.5px);
+    gap: 5px;
+  }
+  .num {
+    font-size: 40px;
+    color: $main-color;
+    font-weight: 700;
+    line-height: 40px;
+    @include max-768 {
+      font-size: 32px;
+      line-height: 35px;
+    }
+  }
+  .title {
+    max-width: 160px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-align: center;
+    @include dir(ltr) {
+      line-height: 24px;
+      max-width: 172px;
+    }
+    @include max-768 {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 130px;
+      @include dir(ltr) {
+        line-height: 1.4;
+        max-width: 135px;
+      }
+    }
+  }
+}

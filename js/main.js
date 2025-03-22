@@ -22,6 +22,19 @@ $(document).ready(function () {
   $(".success-toast .closeToastBtn").on("click", function () {
     $(".success-toast").removeClass("show-toast");
   });
+  //**************************************************************************************************
+
+  //  File Input
+
+  $(".addFile-btn").on("click", function (e) {
+    e.preventDefault();
+    $(".file-label .input").trigger("click");
+  });
+
+  $(".file-label .input").on("change", function () {
+    if (this.files.length === 0) return;
+    $(".place-txt").html(this.files[0].name);
+  });
 
   //**************************************************************************************************
 
@@ -52,13 +65,14 @@ $(document).ready(function () {
   // Brands Swiper
   const brands = new Swiper(".brands .swiper", {
     loop: true,
-    // autoplay: true,
+    autoplay: true,
+    draggable: true,
+    speed: 800,
     pagination: {
       el: ".brands .swiper-pagination",
       clickable: true,
     },
 
-    // Responsive breakpoints
     breakpoints: {
       350: {
         slidesPerView: 3,
@@ -87,8 +101,8 @@ $(document).ready(function () {
   if ($(window).width() < 768) {
     const BlogSwiper = new Swiper(".blog .swiper", {
       loop: true,
-      draggable: true,
       autoplay: true,
+      draggable: true,
       speed: 800,
       pagination: {
         el: ".blog .swiper-pagination",
@@ -128,7 +142,7 @@ $(document).ready(function () {
 
   //**************************************************************************************************
 
-  //fixed nav
+  // Fixed Header
 
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 0) {

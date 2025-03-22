@@ -17,7 +17,7 @@
 .brands,
 .blog {
   .swiper-pagination {
-    bottom: -35px;
+    bottom: -30px;
   }
 }
 
@@ -33,6 +33,21 @@
 .swiper-pagination {
   display: flex;
   justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  @include dir(rtl) {
+    right: auto;
+    left: 10px;
+  }
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  @include dir(rtl) {
+    right: 10px;
+    left: auto;
+  }
 }
 
 .general-title-wrapper {
@@ -82,6 +97,9 @@
     min-width: 285px;
     padding: 12px;
     min-height: 60px;
+    @include dir(ltr) {
+      min-width: 310px;
+    }
   }
   .toast-content {
     display: flex;
@@ -123,7 +141,96 @@
   }
 }
 
+.upper-section {
+  background-color: #000000;
+  padding-block: 65px;
+  @include max-768 {
+    padding-block: 50px;
+  }
+  .cat-title {
+    font-size: 48px;
+    color: $main-color;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    @include max-768 {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    @include dir(ltr) {
+      line-height: 1.25;
+    }
+  }
+  .cat-text {
+    font-size: 18px;
+    line-height: 2;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+    @include dir(ltr) {
+      line-height: 1.5;
+    }
+    @include max-768 {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  }
+}
 
+.pages-title {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 45px;
+  @include max-768 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    @include dir(ltr) {
+      line-height: 1.4;
+    }
+  }
+}
+
+.privacy-terms-page {
+  padding-top: 80px;
+  @include max-768 {
+    padding-top: 50px;
+  }
+  .privacy-terms-content {
+    padding-top: 35px;
+    padding-inline: 25px;
+    padding-bottom: 75px;
+    background-color: #fff;
+    @include max-768 {
+      padding-bottom: 50px;
+      padding-inline: 20px;
+    }
+    p {
+      max-width: 1082px;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      margin-bottom: 30px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      @include max-768 {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
 
 // Start Preloader
 
