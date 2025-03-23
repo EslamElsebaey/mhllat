@@ -690,7 +690,7 @@ html[dir=ltr] .upper-section .cat-text {
   .sub-menu {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
     background-color: #fff;
     z-index: 100;
@@ -1185,9 +1185,10 @@ html[dir=ltr] .logo-footer-item .text {
   padding-block: 35px;
   position: relative;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .copyright {
     padding-top: 25px;
+    padding-bottom: 90px;
   }
 }
 .copyright::after {
