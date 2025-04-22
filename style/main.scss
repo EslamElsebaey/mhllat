@@ -1,34 +1,21 @@
-
 // Basic
 
-@import"../style/sass/base/fonts";
-@import "../style/sass/mixins/mixins";
-@import "../style/sass/base/reboot";
-@import"../style/sass/base/common";
-
+@import "sass/base/fonts";
+@import "sass/mixins/mixins";
+@import "sass/base/reboot";
+@import "sass/base/common";
 
 // Components
-@import "../style/sass/components/header" ;
-@import "../style/sass/components/footer" ;
-@import "../style/sass/components/coupons";
-@import "../style/sass/components/banners";
-
-
-
+@import "sass/components/header";
+@import "sass/components/footer";
+@import "sass/components/coupons";
+@import "sass/components/banners";
 
 // Sections
-@import "../style/sass/sections/mainBanner";
-@import "../style/sass/sections/brands";
-@import "../style/sass/sections/blog";
-@import "../style/sass/sections/faq";
-@import "../style/sass/sections/store";
-@import "../style/sass/sections/about";
-@import "../style/sass/sections/contact-career";
-
-
-
-
-
-
-
-
+@import "sass/sections/mainBanner";
+@import "sass/sections/brands";
+@import "sass/sections/blog";
+@import "sass/sections/faq";
+@import "sass/sections/store";
+@import "sass/sections/about";
+@import "sass/sections/contact-career";
